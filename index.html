@@ -20,11 +20,19 @@
             input-bordered w-full max-w-xs" />
             <button onclick="handleSearch()" class="btn btn-accent">Search</button>
         </section>
+
         <section>
+            <!-- spinner -->
+            <div id="loading-spinner" class="text-center my-40 hidden">
+                <span class="loading loading-spinner loading-lg"></span>
+            </div>
             <!-- Phone Container -->
-            <div id="phone-container" 
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                
+            <div id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            </div>
+            <!-- Show all -->
+            <div id="show-all-container" class="hidden text-center my-8">
+                <button onclick="handleShowAll()" class="btn btn-accent">Show All</button>
             </div>
         </section>
     </main>
